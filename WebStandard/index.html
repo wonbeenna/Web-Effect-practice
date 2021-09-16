@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="WEBSTANDARD" />
+    <meta name="description" content="웹 표준을 준수한 사이트 예제" />
+    <meta name="keywords" content="웹표준 사이트 만들기" />
+    <meta name="generator" content="brakets" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <title>WEBSTANDARD SITE</title>
+
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- 스킵 네비게이션 -->
+    <div id="skip">
+      <a href="#cont_nav">전체 메뉴 바로가기</a>
+      <a href="#cont_ban">배너 영역 바로가기</a>
+      <a href="#cont_cont">컨텐츠 영역 바로가기</a>
+    </div>
+
+    <div id="wrap">
+      <!-- 헤더 -->
+      <div id="header">
+        <div class="container">
+          <div class="header">
+            <div class="header-menu">
+              <a href="/">Designer</a>
+              <a href="/">Publisher</a>
+              <a href="/">Youtube</a>
+            </div>
+            <div class="header-tit">
+              <h1>Professional Publisher &amp; Designer</h1>
+              <br />
+              <a href="/">WEBSTANDARD</a>
+            </div>
+
+            <!-- 이미지 표현 
+            1. 의미가 있을 때 img 태그 / alt 태그로 대체 문자 표현
+            2. 의미가 없을 때 css / 대체 문자 필요없음 
+            3. 요즘은 이미지를 background 속성으로 사용 -> 가상으로 대체 문자를 만듬(웹표준 준수하기 위해)(IR 효과)
+                * 이미지 스프라이트(웹표준 준수하지 못하기 때문에 가상으로 대체 문자 만듬) -> 작업이 편하고 용량이 줄어듬
+            -->
+
+            <div class="header-icon">
+              <a href="#" class="icon1"><span class="ir_pm">icon1</span></a>
+              <a href="#" class="icon2"><span class="ir_pm">icon2</span></a>
+              <a href="#" class="icon3"><span class="ir_pm">icon3</span></a>
+              <a href="#" class="icon4"><span class="ir_pm">icon4</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 컨텐츠 -->
+      <div id="contents">
+        <div id="cont_nav">
+          <div class="container">cont_nav</div>
+        </div>
+        <div id="cont_tit">
+          <div class="container">cont_tit</div>
+        </div>
+        <div id="cont_ban">
+          <div class="container">cont_ban</div>
+        </div>
+        <div id="cont_cont">
+          <div class="container">cont_cont</div>
+        </div>
+      </div>
+      <!-- 풋터 -->
+      <div id="footer">
+        <div class="container">footer</div>
+      </div>
+    </div>
+  </body>
+</html>
